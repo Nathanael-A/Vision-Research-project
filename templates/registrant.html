@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %} Vision Research Archives {% endblock  %}
+
+
+{% block content %}
+
+    <br>
+
+    <h3> You have successfully registered  </h3>
+    <h6>Here are your details, confirm</h6>
+    <ul>
+        <li><strong>Full name :</strong> {{ fullname }} </li>
+        <li><strong>Level :</strong> {{level}} </li>
+        <li><strong>Phone number: </strong> {{phone}} </li>
+        <li><strong>Email :</strong> {{email}} </li>
+        <li><strong>Date of Birth :</strong> {{date_of_birth}} </li>
+    </ul>
+
+
+
+{% endblock %}

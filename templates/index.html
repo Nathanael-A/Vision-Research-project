@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %} Vision Reaseach Archives {% endblock  %}
+
+
+{% block content %}
+
+    <h3> Home Page </h3>
+
+    <p> Welcome to my home page </p>
+
+    <p> This is the list of Journals that we publish in </p>
+    {% for name in names %}
+        <li><a href=""> {{ name }} </a></li>
+
+    {% endfor %}
+
+{% endblock %}

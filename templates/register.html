@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <h3>  Registration Page  </h3>
+  <p> Complete the form below, * are requirements  </p>
+
+     <form action="/registrant" method="post">
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="first_name" placeholder="* First Name" name = "first_name">
+          </div>
+
+          <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="last_name" placeholder="* Last Name" name = "last_name">
+          </div>
+
+           <div class="form-group col-md-4">
+            <input type="text" class="form-control" id="other_name" placeholder="Other name(s)" name = "other_name">
+          </div>
+
+        </div>
+
+       <br>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <select class="form-control" id="level" name = 'level'>
+              <option selected disabled>*Select Level </option>
+              <option value=100>Level 100</option>
+              <option value=200>Level 200</option>
+              <option value=300>Level 300</option>
+              <option value=400>Level 400</option>
+              <option value=600>Level 600</option>
+              <option value=700>Level 700</option>
+            </select>
+          </div>
+
+            <div class="form-group col-md-2">
+              <input type="text" class="form-control" id="phone_number" placeholder="*Phone number" name = "phone_number">
+            </div>
+
+             <div class="form-group col-md-4">
+              <input type="email" class="form-control" id="email" placeholder="*Email Address" name = "email">
+             </div>
+
+          </div>
+       <br>
+
+       <div class="form-row">
+
+          <div class="form-group col-md-2">
+                <label for="birthday">*Date of Birth </label>
+                <input type="date" class="form-control" id="birthday" name = "birthday">
+          </div>
+
+
+        </div>
+
+       <br>
+
+        <button type="submit" class="btn btn-secondary">Register</button>
+     </form>
+
+
+
+{% endblock %}
